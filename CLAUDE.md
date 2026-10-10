@@ -20,23 +20,24 @@ Consequential actions, such as sending emails or changing calendar events, must 
 - Docker and Docker Compose for containerization
 - Git and GitHub for version control
 
+
+
 ## Project Structure
 
-Follow the architecture described in `README.md`.
+Follow the architecture described in `README.md` as the application is developed.
 
-As functionality is implemented, the project may grow to include:
+The initial project structure for Week 1 is:
 
-- `app/` – application code
-- `app/api/` – API endpoints and incoming events
-- `app/integrations/` – external provider integrations
-- `app/schemas/` – application data models
-- `app/services/` – email and calendar operations
-- `app/workflows/` – event processing and routing
-- `app/agents/` – AI decision-making logic
-- `app/database/` – database models and queries
-- `tests/` – automated tests
+- `src/` – source code directory, initially empty
+- `tests/` – automated tests, initially empty
+- `main.py` – initial Hello World entry point
+- `CLAUDE.md` – project context and development guidelines
 
-Create folders only when they are needed for working code. Do not generate unnecessary placeholder modules.
+The README describes a possible future application architecture using `app/` and subdirectories such as `api/`, `integrations/`, `services/`, `workflows/`, `agents/`, and `database/`.
+
+Do not create these future directories until the workshop exercises or implemented functionality require them. Revisit the directory conventions when the application architecture is introduced.
+
+Do not implement business logic or generate unnecessary placeholder modules during Week 1.
 
 ## Coding Guidelines
 
@@ -48,6 +49,8 @@ Create folders only when they are needed for working code. Do not generate unnec
 - Implement and test one feature at a time.
 - Follow the existing repository conventions.
 
+
+
 ## Security and Privacy
 
 - Never commit `.env` files, API keys, tokens, or credentials.
@@ -56,6 +59,8 @@ Create folders only when they are needed for working code. Do not generate unnec
 - Request only the permissions needed for each feature.
 - Never send emails or modify calendar events without explicit user approval.
 - Do not log sensitive email content unnecessarily.
+
+
 
 ## Development Workflow
 
